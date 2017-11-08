@@ -23,7 +23,7 @@ const SignInPage = ({signInWithFacebook, signInWithGoogle}) => {
         </h3>
         <div className='sign-in__content'>
           <h3 className='before-about'>
-          בהרשמה כאן תכנסו למערכת ניהול המשימות השיתופי של מידברנרות 
+          בהרשמה כאן תכנסו למערכת ניהול המשימות השיתופית של חושן 
           </h3>
           <h5 className='about-header'>
           (<NavLink to='/about'> קצת על המערכת ></NavLink>)
@@ -36,17 +36,14 @@ const SignInPage = ({signInWithFacebook, signInWithGoogle}) => {
           <Icon name='done' className='grow done' />
           כל אחד מוזמן להירשם לכל משימה (כל עוד היא פנויה)
           </h3>
-          <h3>
-          <Icon name='done' className='grow done' />
-            נבקש שתרשמו למשימה אחת בלבד כדי לאפשר לכולם להשתתף 
-          </h3>
+          
           <h3>
           <Icon name='done' className='grow done' />
           כל אחד יכול להציע כל משימה (גם בלי להירשם למשימה שהציע)
           </h3>
           <h3>
           <Icon name='done' className='grow done' />
-          האירוע יתקיים רק אם נבצע את כל המשימות הקריטיות לקיומו
+          העבודה תתקיים רק אם נבצע את כל המשימות הקריטיות לקיומה
           </h3>
           <h3>
           <Icon name='done' className='grow done' />
@@ -57,7 +54,7 @@ const SignInPage = ({signInWithFacebook, signInWithGoogle}) => {
           </h3>
           <div className='sign-in-buttons'>
             <Button className="sign-in__button" onClick={signInWithGoogle}>התחברי עם גוגל</Button>
-            <Button className="sign-in__button" onClick={signInWithFacebook}>התחברי עם פייסבוק</Button>
+            {/* <Button className="sign-in__button" onClick={signInWithFacebook}>התחברי עם פייסבוק</Button> */}
         </div>
         <br/>
         <br/>

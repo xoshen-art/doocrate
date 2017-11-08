@@ -67,10 +67,7 @@ export class TasksPage extends Component {
 
   componentWillMount() {
     // Redirect to default filter
-    if(!this.props.filterType) {
-      this.props.history.push({
-        search: '?filter=taskType&text=2'
-      })
+    if(!this.props.filterType) {      
     }
 
     this.props.loadTasks();

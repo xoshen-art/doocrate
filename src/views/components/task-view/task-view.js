@@ -152,14 +152,14 @@ export class TaskView extends Component {
         <div className='task-view'>
           <form onSubmit={this.handleSubmit} noValidate>
             {this.renderInput(task, 'title', 'שם המשימה', canEditTask)}
-            {this.renderSelect(task, 'projectName', 'שם המחנה/מיצב', this.state.defaultProjectNames, canEditTask)}
+            {/* this.renderSelect(task, 'projectName', 'שם המחנה/מיצב', this.state.defaultProjectNames, canEditTask) */} 
             {this.renderTextArea(task, 'description', 'תאור המשימה', canEditTask)}
-            <span>תומכ.ת</span> { this.renderSelect(task, 'circle', 'תומכ.ת', this.state.defaultCircle, canEditTask)}
+            {/* <span>תומכ.ת</span> { this.renderSelect(task, 'circle', 'תומכ.ת', this.state.defaultCircle, canEditTask)} */}
             <div><Icon className='label' name='loyalty' /> {this.renderLabel(canEditTask)} </div>
-            <div><span>סוג המשימה</span> { this.renderSelect(task, 'type', 'סוג המשימה', this.state.defaultType, canEditTask)}</div>
+            {/* <div><span>סוג המשימה</span> { this.renderSelect(task, 'type', 'סוג המשימה', this.state.defaultType, canEditTask)}</div> */}
             <div><span>אנשי קשר רלוונטיים</span> {this.renderTextArea(task, 'relevantContacts', 'אנשי קשר רלוונטיים', canEditTask)}</div>
-            <div><span>טלפון ממלא המשימה</span>{ this.renderInput(task, 'assigneePhone', 'טלפון ממלא המשימה', canEditTask) }</div>
-            <div className='is-critical'>{ this.renderCheckbox(task, 'isCritical', 'האם המשימה קריטית לקיום הארוע?', canEditTask) }</div>
+            {/* <div><span>טלפון ממלא המשימה</span>{ this.renderInput(task, 'assigneePhone', 'טלפון ממלא המשימה', canEditTask) }</div> */}
+            <div className='is-critical'>{ this.renderCheckbox(task, 'isCritical', 'האם המשימה קריטית?', canEditTask) }</div>
             <span>סטטוס</span> {this.renderTextArea(task, 'status', 'סטטוס המשימה', canEditTask)}
           </form>
           { this.props.comments ?
